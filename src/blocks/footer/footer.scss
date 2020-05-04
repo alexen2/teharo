@@ -1,0 +1,82 @@
+.footer__body {
+	/* 2 Block model */
+	@include space(padding, top, yellow);
+	@include space(padding, bottom, yellow);
+}
+.footer__item {
+	/* 2 Block model */
+	@include space(margin, bottom, mediumblue);
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 0;
+	}
+}
+.footer__item--mb0 {
+	/* 2 Block model */
+	margin-bottom: 0;
+}
+.footer .h3 {
+	/* 2 Block model */
+	@include space(margin, bottom, blue);
+
+	/* 3 Typography */
+	color: $color-text;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		min-height: 40px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		min-height: 56px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		min-height: auto;
+	}
+}
+.footer .text {
+	/* 2 Block model */
+	@include space(margin, bottom, blue);
+}
+.footer__bottom .text {
+	/* 3 Typography */
+	color: $color-white;
+}
+.footer .text:last-child {
+	margin-bottom: 0;
+}
+.footer__item .social {
+	/* 2 Block model */
+	flex-wrap: wrap;
+	padding-left: 24px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-left: 0;
+	}
+}
+.footer__item .social__item {
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 12px;
+	}
+}
+.footer__bottom {
+	/* 2 Block model */
+	@include space(padding, top, darkblue);
+	@include space(padding, bottom, darkblue);
+
+	/* 4 Visual */
+	background-color: $color-text;
+}
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */

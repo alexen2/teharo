@@ -1,0 +1,18 @@
+header.header
+	div.header__logo
+		+logo({img: 'logo.png'})
+
+	div.header__menu
+		+menu('о компании' ,'каталог', 'поддержка' ,'контакты')
+
+	div.header__contact
+		a.link.h3(href="tel:+78003256444") +7 (800) 3256-444
+		+btn({text: 'Заказать звонок', type: 'link', url: '#'})
+
+	div.header__hamburger
+		button.header__btn(type="button")
+			span.visually-hidden Открыть
+			span.header__btn-border
+
+	div.header__mobile
+		include ../header-mobile/header-mobile.pug

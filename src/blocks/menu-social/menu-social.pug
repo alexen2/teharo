@@ -1,0 +1,6 @@
+mixin menu-social(data)
+  ul.menu-social(class!=attributes.class)
+    - for (var i = 0; i < data.items.length; i++)
+    li.menu-social__item
+      a.menu-social__link(href=data.url)= data.items[i]
+        +icon(data.icon, 'icon--32')

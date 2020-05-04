@@ -1,0 +1,37 @@
+.info {
+	/* 2 Block model */
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-right: 40px;
+	padding-left: 40px;
+	@include space(padding, top, 	darkblue);
+	@include space(padding, bottom, 	darkblue);
+
+	/* 3 Typography */
+	text-align: center;
+
+	/* 4 Visual */
+	border: 1px solid $color-helper-1;
+}
+.info__title {
+	/* 2 Block model */
+	@include space(margin, bottom, 	crayola);
+}
+.info__text {
+	/* 2 Block model */
+	width: 100%;
+}
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */

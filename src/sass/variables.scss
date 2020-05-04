@@ -1,0 +1,106 @@
+/*
+ * Fonts
+ *
+ */
+
+$font-main: "Open Sans", sans-serif;
+$font-second: "Roboto", sans-serif;
+
+/*
+ * Colors
+ *
+ */
+$color-primary: #FF4F5A;
+$color-primary-dark: #DE3C46;
+$color-primary-x-dark: #A92A32;
+$color-primary-lite: #FF9DA3;
+
+$color-text: #323C46;
+$color-subtitle: #979797;
+$color-helper-1: #E1E1E1;
+$color-helper-1: #FFEA00;
+$color-white: #FFFFFF;
+$color-black: #000000;
+
+/*
+ * Grid
+ *
+ */
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px
+);
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1170px
+);
+
+/*
+ * Space
+ *
+ */
+$space_breakpoints: (
+	null: 320px,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px
+);
+$space: (
+	crayola: (
+		null: 8px,
+		lg: 10px
+	),
+	violet: (
+		null: 14px,
+		lg: 18px
+	),
+	darkblue: (
+		null: 22px,
+		lg: 28px
+	),
+	blue: (
+		null: 30px,
+		lg: 40px
+	),
+	green: (
+		null: 40px,
+		lg: 50px
+	),
+	yellow : (
+		null: 50px,
+		lg: 60px
+	),
+	orange: (
+		null: 60px,
+		lg: 80px
+	),
+	red: (
+		null: 80px,
+		lg: 150px,
+	)
+);
+
+/*
+ * Animation Speed
+ *
+ */
+$animation-speed: 0.4s;
+$cubic-bezier:cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */

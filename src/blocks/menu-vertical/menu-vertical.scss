@@ -1,0 +1,47 @@
+.menu-vertical {
+	/* 2 Block model */
+	padding: 0;
+	margin: 0;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.menu-vertical__item {
+	/* 2 Block model */
+	@include space(margin, bottom, crayola);
+
+	/* 3 Typography */
+	line-height: 16px;
+}
+.menu-vertical__item:last-child {
+	/* 2 Block model */
+	margin-bottom: 0;
+}
+.menu-vertical__link {
+	/* 3 Typography */
+	text-decoration: none;
+
+	/* 5 Animation */
+	transition: all 0.4s;
+}
+.menu-vertical__link:hover {
+	/* 3 Typography */
+	text-decoration: underline;
+
+	/* 4 Visual */
+	opacity: 0.9;
+}
+.menu-vertical__link:focus {
+	/* 3 Typography */
+	text-decoration: underline;
+
+	/* 4 Visual */
+	opacity: 0.9;
+}
+.menu-vertical__link:active {
+	/* 3 Typography */
+	text-decoration: underline;
+
+	/* 4 Visual */
+	opacity: 0.9;
+}

@@ -1,0 +1,5 @@
+mixin list(data)
+	ul.list&attributes(attributes)
+		- for (var i = 0; i < data.items.length; i++)
+			li.list__item
+				p.list__text= data.items[i]

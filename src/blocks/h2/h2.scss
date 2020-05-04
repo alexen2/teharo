@@ -1,0 +1,16 @@
+.h2 {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-second;
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 38px;
+	color: $color-text;
+	@media (min-width: 992px) {
+		/* 3 Typography */
+		font-size: 38px;
+		line-height: 44px;
+	}
+}

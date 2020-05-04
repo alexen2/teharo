@@ -1,0 +1,48 @@
+.btn--flat {
+	/* 3 Typography */
+	color: $color-primary;
+
+	/* 4 Visual */
+	background-color: transparent;
+	border: 1px solid $color-primary;
+}
+.btn--flat .icon {
+	/* 4 Visual */
+	fill: #000000;
+}
+.btn--flat:hover {
+	/* 3 Typography */
+	color: $color-white;
+
+	/* 4 Visual */
+	background-color: $color-primary-dark;
+	border: 1px solid $color-primary-dark;
+}
+.btn--flat:focus {
+	/* 3 Typography */
+	color: $color-white;
+
+	/* 4 Visual */
+	background-color: $color-primary-dark;
+	border: 1px solid $color-primary-dark;
+}
+.btn--flat:active {
+	/* 3 Typography */
+	color: $color-white;
+
+	/* 4 Visual */
+	background-color: $color-primary-x-dark;
+	border: 1px solid $color-primary-x-dark;
+}
+.btn--flat:disabled {
+	/* 3 Typography */
+	color: $color-primary-lite;
+
+	/* 4 Visual */
+	background-color: transparent;
+	border: 1px solid $color-primary-lite;
+}
+.btn--flat:hover .icon {
+	/* 4 Visual */
+	fill: #CCCCCC;
+}

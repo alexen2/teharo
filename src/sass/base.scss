@@ -1,0 +1,49 @@
+body {
+	/* 2 Block model */
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+
+	/* 3 Typography */
+	font-family: $font-main;
+}
+p,
+ul {
+	/* 2 Block model */
+	padding: 0;
+	margin: 0;
+}
+.container {
+	@media (min-width: 1200px) {
+		padding-right: 80px;
+		padding-left: 80px;
+	}
+}
+.wrapper {
+	overflow-x: hidden;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	white-space: nowrap;
+	border: 0;
+	clip-path: inset(100%);
+}
+.overflow-heidden {
+	overflow: hidden;
+}
+.center {
+	@media (min-width: 1200px) {
+		text-align: center;
+	}
+}
+.mr-mb10 {
+	margin-bottom: 10px;
+}

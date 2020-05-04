@@ -1,0 +1,92 @@
+.btn {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	box-sizing: border-box;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px 23px;
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	color: $color-white;
+	text-decoration: none;
+	vertical-align: middle;
+
+	/* 4 Visual */
+	cursor: pointer;
+	user-select: none;
+	background-color: $color-primary;
+	border: 1px solid $color-primary;
+	border-radius: 10px;
+	outline: none;
+
+	/* 5 Animation */
+	transition: all $animation-speed;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: transparent;
+}
+.btn:hover {
+	/* 4 Visual */
+	background-color: $color-primary-dark;
+	border: 1px solid $color-primary-dark;
+}
+.btn:focus {
+	/* 4 Visual */
+	background-color: $color-primary-dark;
+	border: 1px solid $color-primary-dark;
+}
+.btn:active {
+	/* 4 Visual */
+	background-color: $color-primary-x-dark;
+	border: 1px solid $color-primary-x-dark;
+}
+.btn:disabled {
+	/* 4 Visual */
+	cursor: not-allowed;
+	background-color: $color-primary-lite;
+	border: 1px solid $color-primary-lite;
+}
+.btn .icon {
+	/* 2 Block model */
+	box-sizing: inherit;
+	flex-shrink: 0;
+	width: 15px;
+	height: 15px;
+
+	/* 4 Visual */
+	fill: #FFFFFF;
+
+	/* 5 Animation */
+	transition: all 0.4s;
+}
+.btn:hover .icon {
+	/* 4 Visual */
+	fill: #000000;
+}
+.btn .icon:first-child:not(:last-child) {
+	/* 2 Block model */
+	margin-right: 15px;
+}
+.btn .icon:last-child:not(:first-child) {
+	/* 2 Block model */
+	margin-left: 15px;
+}
+
+/* -------------------------------------------- */
+
+/*
+ * Modifiers
+ *
+ */
+
+@import '--block/--block';
+@import '--outline/--outline';
+@import '--flat/--flat';

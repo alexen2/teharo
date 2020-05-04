@@ -1,0 +1,10 @@
+mixin menu(...items)
+	nav.menu&attributes(attributes)
+		ul.menu__list
+			- for (var i = 0; i < items.length; i++)
+				if i == 0
+					li.menu__item.menu__item--active
+						a.h4.menu__link(href="")= items[i]
+				else
+					li.menu__item
+						a.h4.menu__link(href="")= items[i]
