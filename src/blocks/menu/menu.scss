@@ -30,11 +30,7 @@
 	transition: all 0.4s;
 	@media (min-width: 992px) {
 		/* 2 Block model */
-		margin-right: 15px;
-	}
-	@media (min-width: 1400px) {
-		/* 2 Block model */
-		margin-right: 32px;
+		margin-right: 31px;
 	}
 }
 .menu__item::before {
@@ -50,7 +46,7 @@
 
 	/* 4 Visual */
 	content: '';
-	background-color: #EEB18F;
+	background-color: $color-primary;
 
 	/* 5 Animation */
 	transition: all 0.4s;
@@ -65,7 +61,6 @@
 	/* 3 Typography */
 	color: $color-text;
 	text-decoration: none;
-	text-transform: uppercase;
 }
 .menu__item--active::before {
 	/* 1 Positioning */
@@ -87,7 +82,7 @@
 }
 .menu__item--active:hover::before {
 	/* 4 Visual */
-	background-color: #EEB18F;
+	background-color: $color-primary;
 }
 .menu__item:hover::before {
 	/* 2 Block model */

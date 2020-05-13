@@ -9,7 +9,7 @@ $(document).ready(function() {
 		$('body').toggleClass('overflow-heidden ');
 	});
 
-	let scrolled = 25;
+	let scrolled = 0;
 
 	// changeScrolled();
 

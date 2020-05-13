@@ -1,0 +1,41 @@
+.top {
+  
+}
+.top .subtitle,
+.top .text {
+  color: $color-subtitle;
+}
+.top .subtitle {
+  @include space(margin, bottom, violet);
+}
+.top .h1 {
+  @include space(margin, bottom, darkblue);
+}
+.top .text {
+  @include space(margin, bottom, green);
+}
+.top__action {
+  display: flex;
+
+  @include space(margin, bottom, green);
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+.top__action .btn:first-child {
+  margin-right: 18px;
+  @media (min-width: 768px) {
+    margin-right: 16px;
+  }
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */

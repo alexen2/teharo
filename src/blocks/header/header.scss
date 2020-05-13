@@ -1,9 +1,6 @@
 .header {
 	/* 1 Positioning */
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
+	position: relative;
 	z-index: 5;
 
 	/* 2 Block model */
@@ -11,20 +8,25 @@
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-	max-width: 1778px;
-	padding-right: 15px;
-	padding-left: 15px;
 	margin: 0 auto;
-	@include space(padding, top, green);
-	@include space(padding, bottom, green);
-}
-.header__logo .logo {
-	/* 2 Block model */
-	max-width: 98px;
-	@media (min-width: 992px) {
+	@include space(padding, top, violet);
+	@include space(padding, bottom, violet);
+	@include space(margin, bottom, yellow);
+
+	/* 4 Visual */
+	box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+	@media (min-width: 768px) {
 		/* 2 Block model */
-		max-width: 184px;
+		margin-bottom: 0;
 	}
+}
+.header__body {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0 15px;
 }
 .header__menu {
 	/* 2 Block model */
@@ -32,39 +34,16 @@
 	@media (min-width: 992px) {
 		/* 2 Block model */
 		display: block;
+		margin-left: auto;
 	}
 }
-.header__contact {
+.header__action {
 	/* 2 Block model */
 	display: none;
 	@media (min-width: 992px) {
 		/* 2 Block model */
-		display: flex;
-		align-items: center;
-	}
-}
-.header__contact .link {
-	/* 2 Block model */
-	display: inline-block;
-	margin-right: 50px;
-
-	/* 3 Typography */
-	color: $color-text;
-	@media (min-width: 1200px) {
-		/* 2 Block model */
-		margin-right: 25px;
-	}
-	@media (min-width: 1600px) {
-		/* 2 Block model */
-		margin-right: 50px;
-	}
-}
-.header__contact .btn {
-	/* 2 Block model */
-	display: none;
-	@media (min-width: 1200px) {
-		/* 2 Block model */
 		display: block;
+		margin-left: 112px;
 	}
 }
 .header__mobile {
@@ -78,7 +57,7 @@
 	display: block;
 	width: 100%;
 	height: 100vh;
-	padding-top: 15px;
+	padding-top: 14px;
 
 	/* 4 Visual */
 	background-color: $color-white;
@@ -111,7 +90,7 @@
 
 	/* 2 Block model */
 	display: block;
-	width: 22px;
+	width: 31px;
 	height: 19px;
 
 	/* 4 Visual */
@@ -124,8 +103,6 @@
 .header__btn::after {
 	/* 1 Positioning */
 	position: absolute;
-	right: 0;
-	left: 0;
 
 	/* 2 Block model */
 	display: block;
@@ -133,25 +110,36 @@
 
 	/* 4 Visual */
 	content: '';
-	background-color: $color-text;
 }
 .header__btn::before {
 	/* 1 Positioning */
 	top: 0;
+	right: 0;
+	left: 0;
+
+	/* 4 Visual */
+	background-color: $color-primary;
 }
 .header__btn::after {
 	/* 1 Positioning */
+	right: 0;
 	bottom: 0;
+
+	/* 2 Block model */
+	width: 22px;
+
+	/* 4 Visual */
+	background-color: $color-text;
 }
 .header__btn-border {
 	/* 1 Positioning */
 	position: absolute;
 	top: 8px;
 	right: 0;
-	left: 0;
 
 	/* 2 Block model */
 	display: block;
+	width: 22px;
 	height: 3px;
 
 	/* 4 Visual */
@@ -160,15 +148,12 @@
 .scrolled .header {
 	/* 1 Positioning */
 	position: fixed;
+	left: 0;
+	right: 0;
 
 	/* 4 Visual */
 	background-color: $color-white;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-	@media (min-width: 992px) {
-		/* 2 Block model */
-		padding-top: 25px;
-		padding-bottom: 25px;
-	}
 }
 
 @keyframes header-mobile {

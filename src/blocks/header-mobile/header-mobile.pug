@@ -1,11 +1,8 @@
 div.header-mobile
 	div.header-mobile__top
-		+logo({img: 'logo.png'})
+		+logo({img: 'logo.svg'})
 		button.header-mobile__btn(type="button")
 			span.visually-hidden Закрыть
 
 	div.header-mobile__body.header-mobile__wrapper
-		+menu('о компании' ,'каталог', 'поддержка' ,'контакты')
-	div.header-mobile__contact.header-mobile__wrapper
-		a.link.h3(href="tel:+78003256444") +7 (800) 3256-444
-		+btn({text: 'Заказать звонок', type: 'link', url: '#'})
+		+menu('Хостинг' ,'VPS / VDS', 'Домены' ,'Выделенные серверы', 'Готовые решения')
